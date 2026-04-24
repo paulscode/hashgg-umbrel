@@ -68,10 +68,15 @@ dependencies:
 repo: https://github.com/paulscode/hashgg
 support: https://github.com/paulscode/hashgg/issues
 port: 3000
+# Community stores must supply full URLs for icon and gallery — Umbrel's
+# resolver (packages/umbreld/source/modules/apps/app-repository.ts) only
+# auto-prefixes URLs for the official `umbrel-app-store`. Source comment:
+# "TODO: make this work for custom repos".
+icon: https://raw.githubusercontent.com/paulscode/hashgg-umbrel/master/hashgg-hashgg/icon.svg
 gallery:
-  - 1.jpg
-  - 2.jpg
-  - 3.jpg
+  - https://raw.githubusercontent.com/paulscode/hashgg-umbrel/master/hashgg-hashgg/gallery/1.jpg
+  - https://raw.githubusercontent.com/paulscode/hashgg-umbrel/master/hashgg-hashgg/gallery/2.jpg
+  - https://raw.githubusercontent.com/paulscode/hashgg-umbrel/master/hashgg-hashgg/gallery/3.jpg
 path: ""
 defaultUsername: ""
 defaultPassword: ""
